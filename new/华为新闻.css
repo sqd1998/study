@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  vertical-align: middle;
+
+  /* 清除默认样式 */
+}
+
+.box {
+  /* 盒子大小外边距 */
+    width: 1269px;
+    height: 285px;
+    margin: 200px auto;
+    
+    
+}
+
+.box li {
+    /* 分成3个模块 */
+    position: relative;
+    float: left;
+    margin-right: 30px;
+
+    width: 403px;
+    height: 285px;
+    border: 1px solid #000;
+}
+.box li:nth-child(3) {
+    margin-right: 0;
+    /* 设置第三个li没有右边距 */
+}
+
+.box .pic img {
+    display: inline-block;
+    width: 403px;
+    height: 285px;
+    
+    transition: all 0.5s;
+    
+
+}
+
+
+.box .text {
+    position: absolute;
+    bottom: -45px;
+    left: 0px;
+
+    width: 350px;
+    height: auto;
+    padding: 20px 30px;
+    z-index: 1;
+    color: #fff;
+    
+}
+
+.box .text h4 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 2em;
+      color: #fff;
+}
+
+.box .text h5 {
+
+      font-size: 18px;
+      margin-bottom: 40px;
+      line-height: 1.5em;
+      color: #fff;
+}     
+
+.box .text p {
+
+      color: #fff;
+      font-size: 14px;
+}
+
+
+.box .text p .iconfont {
+        color: #c7000b;
+        vertical-align: middle;
+        font-size: 20px;
+        font-weight: 700;
+}
+
+
+.box li .mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 403px;
+        height: 283px;
+        background-image: linear-gradient(
+            transparent,
+            rgba(0,0,0,0.6) 
+        );
+        /* 渐变背景 */
+        opacity: 0;
+        transition: all 0.5s;
+        
+        
+        
+
+}
+
+.box li:hover .mask {
+  opacity: 1;
+}
+
+.box li:hover img {
+    transform: scale(1.1);
+}
+
+.box li:hover .text {
+
+      transform: translateY(-40px);
+      transition: all 0.5s;
+}
