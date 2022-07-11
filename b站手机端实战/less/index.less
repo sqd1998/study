@@ -1,0 +1,209 @@
+@import './base.less';
+
+// 头部固定区域
+@size: 3.75vw;
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: (84 / @size);
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+
+
+    .daohang {
+        
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding-left: (18 / @size);
+        padding-right: (12 / @size);
+        
+
+        width: 100%;
+        height: (44 / @size);
+        
+
+
+
+        .left .iconfont {
+          font-size: (28 / @size);
+          color: #fb7299;
+          
+        }
+
+        .right {
+            display: flex;
+        
+
+        .search i {
+             font-size: (22 / @size);
+             color: #ccc;
+             margin-top: (5 / @size);
+
+              
+        }  
+
+
+        .face img {
+              width: (24 / @size);
+              height: (24 / @size);
+              margin-left: (24 / @size);
+        }
+
+        .download img {
+              width: (72 / @size);
+              height: (24 / @size);
+              margin-left: (24 / @size);
+
+        }
+
+        }
+
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        
+
+        height: (40 / @size);
+        
+
+
+        .tab {
+
+
+
+          ul {
+            display: flex;
+            
+
+
+            li {
+              padding: 0 (16 / @size);
+              font-size: (14 / @size);
+
+              a {
+                display: block;
+                height: (38 / @size);
+                line-height: (38 / @size);
+
+                &.point {
+                  color: #fb7299;
+                  border-bottom: 1px solid #fb7299;
+                }
+              }
+            }
+
+
+          }
+
+        }
+
+
+        .more {
+          margin-right: (10 / @size);
+          margin-left: (10 / @size);
+          .iconfont {
+            color: #aaa;
+            font-size: (22 / @size)
+          }
+        }
+
+
+    }
+
+}
+
+
+// 视频区域
+.video_content {
+    padding: (84 / @size) (5 / @size) 0; 
+
+    .video_list {
+      display: flex;
+      flex-wrap: wrap;
+      // 弹性盒子换行
+
+
+      a {
+      
+        width: 50%;
+        padding: (8 / @size) (5 / @size);
+        font-size: (12 / @size);
+        margin-bottom: (10 / @size);
+
+        .text {
+          margin-top: (5 / @size);
+        }
+
+        .pic {
+          position: relative;
+          display: flex;
+
+          .left {
+            position: absolute;
+            left: (5 / @size);
+            bottom: 0;
+            color: #ffffff;
+            
+
+          }
+          .right {
+            position: absolute;
+            right: (5 / @size);
+            bottom: 0;
+            color: #ffffff;
+            
+
+          }
+        }
+       
+      }
+    }
+}
+
+// 底部按钮
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: (12 / @size);
+  
+
+
+
+
+  .bottom_foot {
+    display: flex;
+
+
+    width: 93.6vw;
+    height: 9.6vw;
+    line-height: 9.6vw;
+    border-radius: 6.67vw; 
+
+
+    background-color: #fb7299;
+    
+
+
+    i {
+      color: #fff;
+      margin-left: (70 / @size);
+
+    }
+    p {
+        color: #fff;
+        margin-left: (15 / @size);
+        font-size: 3.7vw;
+    }
+
+    
+
+
+  }
+}
