@@ -1,4 +1,5 @@
 # study
 学习HTML与css的练手页面
-![Alt text](.01.png 项目截图)
-![Alt text](.02.PNG 项目截图)
+<img src="01.PNG" style="zoom:50%;" />
+
+<img src="02.PNG" style="zoom:50%;" />
